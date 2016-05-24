@@ -1,0 +1,89 @@
+// ### Variables SCSS ###
+// HTML Background  Color
+$htmlBackground: #34495e;
+
+// Title Color
+$titleColor: #fff;
+
+// Width of single number boxes => Days / Hours / Minutes / Seconds
+$numberWidth: 100%/4.20;
+
+// Background colors of timer boxes
+$timerBackground: #95a5a6;
+$clockInnerBackground: #34495e;
+$daysBackground: #3498db;
+$hoursBackground: #9b59b6;
+$minutesBackground: #f39c12;
+$secondsBackground: #c0392b;
+
+html{
+  background-color: $htmlBackground;
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+  color: $titleColor;
+}
+
+.timer-clock{
+  margin: 0 auto;
+  margin-top: 7%;
+  width: 800px;
+  height: 250px;
+  padding: 25px;
+  background-color: $timerBackground;
+}
+
+.days{
+  background-color: $daysBackground;
+}
+
+.hours{
+  background-color: $hoursBackground;
+}
+
+.minutes{
+  background-color: $minutesBackground;
+}
+
+.seconds{
+  background-color: $secondsBackground;
+}
+
+// Background which appears just behind the numbers' boxes
+.clock-inner-background{
+  background-color: $clockInnerBackground;
+  height: 220px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+// Class for every single number -> Days / Hours / Minutes / Seconds
+.single-number{
+  display: inline-block;
+  width: $numberWidth;
+  height: 100%;
+  margin: 3px;
+  text-align: center;
+  color: #fff;
+  font-size:25px;
+  font-weight: bold;
+  line-height: 55px;
+  h3{
+    text-decoration: underline;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}
+
+// Divs with numbers initialized by javaScript
+#days,
+#hours,
+#minutes,
+#seconds{
+  font-size: 100px;
+}
