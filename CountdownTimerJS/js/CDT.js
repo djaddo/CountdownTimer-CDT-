@@ -41,6 +41,8 @@ function startTimer(daysInput, hoursInput, minutesInput, secondsInput) {
       document.getElementById("minutes").innerHTML = minutes;
       document.getElementById("seconds").innerHTML = seconds;
 
-      --timer;
+      if(timer>0){
+        --timer;
+      }
     }, 1000);
 }
